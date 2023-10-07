@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body{
+  background: #eaeef6;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-size: 30px;
+    color: #6a778e;
+}
+
+.navbar{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  height: calc(100vh - 1rem*4);
+}
+.navbar__link{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem * 3.5;
+    width: 1rem * 5.5;
+    color: #6a778e;
+    transition: 250ms ease all;
+}
+.navbar__item{
+  width: 65px;
+  height: 65px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: white;
+}
+.navbar__item:hover i{
+    background-color: #406ff3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width:65px;
+    height: 65px;
+}
+
+
+.navbar__menu{
+    position: relative;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.navbar__menu div{
+    margin: 10px 10px;
+}
+.home{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.building{
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+  overflow-y: scroll;
+
+}
+.add{
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+
+}
+.map{
+  margin-left: 15%;
+  margin-top: 3%;
+  width: 1200px;
+  height: 800px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("images/Road.svg");
+  background-size: contain;
+}
+#building3{
+  position: absolute;
+  z-index: 2;
+  top: 4%;
+  left: 4%;
+}
+#building1{
+  position: absolute;
+  z-index: 1;
+  top: 410px;
+  left: 175px;
+}
+
+#building2{
+  position: absolute;
+  z-index: 1;
+  top: 410px;
+  left: 550px;
+}
+#building100{
+  position: absolute;
+  z-index: 1;
+  top: 370px;
+  left: 915px;
+}
+#building4{
+  position: absolute;
+  z-index: 1;
+  bottom: 35px;
+  right: 50px;
+}
+#icanteen{
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  right: 100px;
+}
+#true{
+  position: absolute;
+  z-index: 3;
+  bottom: 80px;
+  left: 110px;
+}
+#inthanin{
+  position: absolute;
+  z-index: 3;
+  bottom: 40px;
+  right: 20px;
+}
+#amazon{
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left :350px
+}
+#larngear{
+  position: absolute;
+  z-index: 3;
+  top: 250px;
+  left :800px
+}
+#building-mech{
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  left: 535px;
+}
+#building-chem{
+  position: absolute;
+  z-index: 1;
+  bottom: 60px;
+  left: 280px;
+}
+#building-arun{
+  position: absolute;
+  z-index: 2;
+  top: 210px;
+  right: 170px;
+}
+#building-bunrod{
+  position: absolute;
+  z-index: 2;
+  bottom: 230px;
+  left: 50px;
+}
+#building-charl{
+  position: absolute;
+  z-index: 2;
+  bottom: 140px;
+  left: 70px;
+}
+#ENG16{
+  position: absolute;
+  z-index: 2;
+  bottom: 60px;
+  left: 200px;
+}
+#true-coffee{
+  position: absolute;
+  z-index: 2;
+  bottom: 60px;
+  left: 120px;
+}
+
+
+.allcard{
+  margin-left: 10%;
+  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.allcard div{
+  margin: 20px 50px;
+}
+article {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+}
+
+article a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.9rem;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+article a {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #28666e;
+}
+
+article a:focus {
+  outline: 1px dotted #28666e;
+}
+
+article a .icon {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  transform: translateX(var(--link-icon-translate));
+  opacity: var(--link-icon-opacity);
+  transition: all 0.3s;
+}
+
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.articles {
+  display: grid;
+  max-width: 1200px;
+  margin: 30px 300px;
+  padding-inline: 24px;
+  font-family: 'Kanit', sans-serif;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+.add-building{
+  margin: 20px 450px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 30px 80px;
+  background-color: white;
+  width: 1000px;
+  font-family: 'Kanit', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 850px;
+}
+.add-building div{
+  margin: 15px 0;
+}
+input{
+  width: 820px;
+  font-size: 24px;
+  padding: 5px;
+}
+textarea{
+  width: 820px;
+  font-size: 24px;
+  padding: 5px;
+  height: 100px;
+  resize: none;
+  overflow-y: scroll;
+}
+.addbutton{
+  width: 250px;
+  height: 75px;
+  background-color: #219C90;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+}
+.button{
+  display: flex;
+  justify-content: end;
+}
+.addbutton:hover{
+  cursor: pointer;
+}
+
+.DeleteButton{
+  background-color: orange;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  width: 80px;
+  position: absolute;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  bottom: 10px;
+  right: 10px;
+}
+.DeleteButton:hover{
+  cursor: pointer;
+  background-color: red;
+}
+
+.filter{
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.MoreButton{
+  background-color: orange;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  width: 80px;
+  position: absolute;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  bottom: 10px;
+  left: 10px;
+}
+.details-page{
+  width: 1400px;
+  position: relative;
+  background-color: white;
+  margin-bottom:1rem ;
+  margin-left: 200px;
+  margin-top: 1rem;
+  border: 1px solid #eaeaea;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+.details-page div{
+  margin: 30px;
+}
+.details-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.back{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-color: red;
+  color: white;
+}

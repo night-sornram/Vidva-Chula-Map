@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidvaMap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+
+<script src="https://kit.fontawesome.com/bb7a850fe7.js" crossorigin="anonymous"></script>
+<body>
+    <nav class="navbar">
+        <div class="navbar__menu">
+          
+          <div class="navbar__item">
+            <a href="#home" class="navbar__link"><i class="fa-solid fa-house"></i></a>        
+          </div>
+          <div class="navbar__item">
+            <a href="#building" class="navbar__link"><i class="fa-solid fa-border-all"></i></a>
+          </div>
+          <div class="navbar__item">
+            <a href="#add" class="navbar__link"><i class="fa-solid  fa-plus"></i></a>        
+          </div>
+
+        </div>
+      </nav>
+      <div class="home" id="home">
+          <div class="map">
+              <div id="building3">
+                <img src="images/building3.svg">
+              </div>
+              <div id="building-arun">
+                <img src="images/building-arun.svg">
+              </div>
+              <div id="building-bunrod">
+                <img src="images/building-bunrod.svg">
+              </div>
+              <div id="building-charl">
+                <img src="images/building-charl.svg">
+              </div>
+              <div id="ENG16">
+                <img src="images/ENG16.svg">
+              </div>
+              <div id="true-coffee">
+                <img src="images/true-coffee.svg">
+              </div>
+              <div id="building1">
+                <img src="images/building1.svg">
+              </div>
+              <div id="building2">
+                <img src="images/building2.svg">
+              </div>
+              <div id="building100" >
+                <img src="images/building100.svg">
+              </div>
+              <div id="building4">
+                <img src="images/building4.svg">
+              </div>
+              <div id="building-mech" >
+                <img src="images/building-mech.svg">
+              </div>
+              <div id="building-chem">
+                <img src="images/building-chem.svg">
+              </div>
+              <div id="icanteen">
+                <img src="images/iCanteen.svg">
+              </div>
+              <div id="true">
+                <img src="images/true.svg">
+              </div>
+              <div id="inthanin">
+                <img src="images/Inthanin-Coffee.svg">
+              </div>
+              <div id="amazon">
+                <img src="images/cafe-amazon.svg">
+              </div>
+              <div id="larngear">
+                <img src="images/Larngear.svg">
+              </div>
+          </div>
+      </div>
+      <div class="building" id="building">
+        <section class="articles" id="articles">
+        </section>
+      </div>
+      <div class="add" id="add">
+        <div class="add-building">
+          <div>
+            <h3>ชื่ออาคาร</h3>
+            <input type="text" id="building-name">
+          </div>
+          <div>
+            <h3>รูปอาคาร</h3>
+            <input type="text" id="building-image">
+          </div>
+          <div>
+            <h3>จำนวนชั้น</h3>
+            <input type="number" id="building-floor">
+          </div>
+          <div>
+            <h3>รายละเอียดตึก</h3>
+            <textarea name="" id="building-details" cols="30" rows="5"></textarea>
+          </div>
+          <div>
+            <h3>เวลาเปิด</h3>
+            <textarea name="" id="building-open" cols="30" rows="5"></textarea>
+          </div>
+          <div>
+            <h3>เวลาปิด</h3>
+            <textarea name="" id="building-close" cols="30" rows="5"></textarea>
+          </div>
+          <div class="button">
+            <button class="addbutton" id="addbutton">ADD</button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="filter" id="filter">
+
+      </div>
+      <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
