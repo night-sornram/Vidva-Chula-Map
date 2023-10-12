@@ -143,7 +143,7 @@ export async function handleCreateItem() {
 
 
 nameToAdd.value = "";
-imageToAdd.value = "";
+imageToAdd.value = "https://upload.wikimedia.org/wikipedia/th/f/f6/EngCU_Gear.png";
 floorToAdd.value = 0;
 detailToAdd.value = "";
 openToAdd.value = "";
